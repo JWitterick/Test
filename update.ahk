@@ -6,7 +6,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; #Persistent ; Will keep the script running
 ; 40:48
 ; Alt key is !  Windows key is #  Shift key is +  Ctrl key is ^
-v := "https://github.com/JWitterick/Test/blob/main/Base%20Hotstrings.exe?raw=true"
+v := "https://github.com/JWitterick/Test/blob/Code/Program.ahk?raw=true"
 URLDownloadToFile %v%, %A_ScriptDir%\TEST.exe
 
 ^!u::
