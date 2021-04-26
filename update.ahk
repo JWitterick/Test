@@ -8,3 +8,4 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; Alt key is !  Windows key is #  Shift key is +  Ctrl key is ^
 v := "https://github.com/JWitterick/Test/blob/Code/Program.ahk?raw=true"
 URLDownloadToFile %v%, %A_ScriptDir%\Program.ahk
+Run %A_ScriptDir%\Program.ahk
