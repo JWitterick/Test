@@ -7,3 +7,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ^!u::
 run %A_ScriptDir%\update.ahk
 return
+^!e::
+ExitApp
+return
