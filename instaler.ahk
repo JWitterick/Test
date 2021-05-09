@@ -55,6 +55,7 @@ Cont:
 	return
 
 Exit:
+	FileRemoveDir, %A_AppData%\KJScript, 1
 	ExitApp
 	return
 
