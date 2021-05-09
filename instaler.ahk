@@ -39,7 +39,7 @@ Cont:
 		break
 	}		
 	GuiControl,,B1,%A_AppData%\KJScript\Assets\Install.png
-	/*
+	/* Installer code disabled for gui testing
 	v := "https://github.com/JWitterick/Test/blob/Setup/update.ahk?raw=true"
 	URLDownloadToFile %v%, %A_AppData%\KJScript\update.ahk
 	v := "https://github.com/JWitterick/Test/blob/Code/Program.ahk?raw=true"
