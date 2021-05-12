@@ -7,16 +7,19 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 state:=0
 
 loop 10 {
-Menu, Hotkey%A_Index%, Add, Key: A, Label1
-Menu, Hotkey%A_Index%, Add, Function: <>, Label2
+FileReadLine, var, %A_AppData%\KJScript\InputKeys.txt, %A_Index%
+FileReadLine, var2, %A_AppData%\KJScript\Functions.txt, %A_Index%
+%var%::%var2%
+Menu, Hotkey%A_Index%, Add, Key: %var%, ChangeKey
+Menu, Hotkey%A_Index%, Add, Function: <%var2%>, ChangeFunction
 }
 loop 10 {
 Menu, Hotkeys, Add, Hotkey %A_Index%, :Hotkey%A_Index%
 Menu, Hotkeys, Add
 }
-Label1:
+ChangeKey:
 return
-Label2:
+ChangeFunction:
 return
 #h::Menu, Hotkeys, Show
 
