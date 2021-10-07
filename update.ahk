@@ -4,4 +4,4 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #SingleInstance, Force ; Only launches 1 instance of this script
 FileDelete, local_version.txt
-FileAppend, 2, local_version.txt
+FileAppend, 1, local_version.txt
