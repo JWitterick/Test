@@ -3,5 +3,5 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #SingleInstance, Force ; Only launches 1 instance of this script
-FileDelete, version.txt
-FileAppend, update2.ahk, version.txt
+FileDelete, local_version.txt
+FileAppend, update2.ahk, local_version.txt
