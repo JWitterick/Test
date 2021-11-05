@@ -7,4 +7,4 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 MsgBox Cum
 FileDelete, local_version.txt
 FileAppend, 1, local_version.txt
-; Changes the update vesion on the computer
+; Changes the local vesion on the computer
