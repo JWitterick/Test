@@ -4,6 +4,7 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #SingleInstance, Force ; Only launches 1 instance of this script
 #NoTrayIcon
-MsgBox Cum, Cum This is a test, Cum ,Tell Jack, You know who
+MsgBox Cum
+; Changes the update vesion on the computer
 FileDelete, local_version.txt
 FileAppend, 1, local_version.txt
