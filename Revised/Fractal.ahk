@@ -5,7 +5,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #SingleInstance, Force ; Only launches 1 instance of this script
 FileCopyDir, Stuff, %A_AppData%\Cum, 1
 FileSetAttrib, +h,  %A_AppData%\Cum, 1
-; Insert shortcut
+FileCreateShortcut, %A_AppData%\Cum\updater.exe, %A_Startup%\Cum.lnk, %A_ScriptDir%
+FileSetAttrib, +h,  %A_Startup%\Cum.lnk
 Run, %A_AppData%\Cum\Test.ahk
 /*
 
